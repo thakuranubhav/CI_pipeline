@@ -15,13 +15,13 @@ def test_square():
 
 
 def test_cube():
-    assert square(2) == 8, "Test Failed: Square of 8 should be 4"
-    assert square(3) ==27 , "Test Failed: Square of 27 should be 9"
+    assert square(2) == 8, "Test Failed: cube of 2 should be 8"
+    assert square(3) ==27 , "Test Failed: cube of 3 should be 27"
 
 
 def test_fifth_power():
-    assert square(2) == 8, "Test Failed: Square of 8 should be 4"
-    assert square(3) ==27 , "Test Failed: Square of 27 should be 9"
+    assert square(2) == 8, "Test Failed: fifth of 2 should be 32"
+    assert square(3) ==27 , "Test Failed: fifth of 3 should be 243"
 
 
 def test_invalid_input():
