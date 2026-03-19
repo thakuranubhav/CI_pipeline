@@ -1,19 +1,35 @@
 import streamlit as st
 import math
 
+
+# Logic functions (testable)
+def square(x):
+    return x ** 2
+
+def cube(x):
+    return x ** 3
+
+def square_root(x):
+    return round(math.sqrt(x), 4)
+
+def fifth_power(x):
+    return x ** 5
+
+
+# Streamlit UI
 st.title("Building a calculator")
 
 st.write("Enter a number to perform calculation")
 
-n= st.number_input("Enter a number for calculation",value=1,step=1)
+n = st.number_input("Enter a number for calculation", value=1, step=1)
 
-sq= math.pow(n,2)
-cube= math.pow(n,3)
+#  Use functions (DO NOT overwrite names)
+sq = square(n)
+cb = cube(n)
+fifth = fifth_power(n)
+sqr = square_root(n)
 
-sqr=math.sqrt(n)
-sqr =round(sqr,4)
-
-
-st.write("Square of a number is ",sq)
-st.write("Cube of a number is ",cube)
-st.write("Square root of a number is ",sqr)
+st.write("Square:", sq)
+st.write("Cube:", cb)
+st.write("Fifth Power:", fifth)
+st.write("Square root:", sqr)
