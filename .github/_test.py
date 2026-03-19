@@ -20,8 +20,8 @@ def test_cube():
 
 
 def test_fifth_power():
-    assert square(2) == 8, "Test Failed: fifth of 2 should be 32"
-    assert square(3) ==27 , "Test Failed: fifth of 3 should be 243"
+    assert square(2) == 32, "Test Failed: fifth of 2 should be 32"
+    assert square(3) ==243 , "Test Failed: fifth of 3 should be 243"
 
 
 def test_invalid_input():
